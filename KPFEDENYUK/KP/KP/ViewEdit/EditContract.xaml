@@ -1,0 +1,35 @@
+﻿<Window x:Class="KP.ViewEdit.EditContract"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KP.ViewEdit"
+        mc:Ignorable="d"
+        Title="Редактировать контракт" Height="900" Width="500">
+    <Grid>
+        <TextBox Text="{Binding FirstName}" x:Name="FirtsName" Width="300" Height="30" Margin="0,0,0,779" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBox>
+        <Label Width="300" Content="Фамилия" Height="30" Margin="0,0,0,814" HorizontalAlignment="Center" VerticalAlignment="Bottom"></Label>
+        <Label Width="300" Content="Имя" Height="30" Margin="0,0,0,744" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <Label Width="300" Content="Отчество" Height="30" Margin="0,0,0,674" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBox Text="{Binding Name}" x:Name="Name" Width="300" Height="30" Margin="0,0,0,709" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBox Text="{Binding MiddleName}" x:Name="MiddleName" Width="300" Height="30" Margin="0,0,0,639" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBox Text="{Binding Number}" x:Name="Number" Width="300" Height="30" Margin="0,0,0,569" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <Button Click="Btn_Add" Width="120" Height="30" Margin="0,0,280,76" FontFamily="Arial" FontSize="14" Content="Редактировать" HorizontalAlignment="Right" VerticalAlignment="Bottom"></Button>
+        <Button Click="Btn_Cancel" Width="120" Height="30" Margin="0,0,100,76" FontFamily="Arial" FontSize="14" Content="Отмена" HorizontalAlignment="Right" VerticalAlignment="Bottom"></Button>
+        <Label Width="300" Content="Номер телефона" Height="30" Margin="0,0,0,604" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <Label Width="300" Content="Дата заключения" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,390,0,0"/>
+        <DatePicker SelectedDate="{Binding DateFirts}" x:Name="DateEnd1" Width="300" Height="30" Margin="0,425,0,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Width="300" Content="Платеж" Height="30" Margin="0,460,0,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding IncurancePayment}" x:Name="Price" Width="300" Height="30" Margin="0,495,0,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Width="300" Content="Действие договора до" Height="30" Margin="0,530,0,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <DatePicker SelectedDate="{Binding Tern}" x:Name="Date" Width="300" Height="30" Margin="0,565,0,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Width="300" Content="Гос.номер" Height="30" Margin="0,600,0,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding GosNumber}" x:Name="GosNumber" Width="300" Height="30" Margin="0,635,0,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Width="300" Content="Марка авто" Height="30" Margin="0,670,0,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding NameCar}" x:Name="NameAuto" Width="300" Height="30" Margin="0,705,0,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding Insurance}" x:Name="Strahov" HorizontalAlignment="Center" Margin="0,0,0,499" VerticalAlignment="Bottom" Width="300" Height="30"/>
+        <Label Width="300" Content="Вид страховки" Height="30" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,534"/>
+    </Grid>
+</Window>
